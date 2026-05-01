@@ -1,0 +1,10 @@
+.portrait-img {
+    max-width: 100%;
+    height: auto;
+    padding: 5vw;
+    object-fit: cover;
+}
+
+.header {
+    display: flex;
+}
