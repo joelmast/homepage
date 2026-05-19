@@ -1,6 +1,7 @@
 .portrait-img {
     max-width: 100%;
     max-height: 100%;
+    width: 20vw;
 
     object-fit: cover;
 }
@@ -9,6 +10,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background: linear-gradient(174deg, #4282a4 50%, #ffffff calc(50% + 1px));
 }
 
 .about-section {
@@ -23,5 +25,20 @@
 }
 
 body {
-    background-color: #202124;
+    background-color: white;
+    margin: 0;
+}
+
+.placeholder-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 18vh;
+}
+
+.projects {
+    display: grid;
+}
+
+.placeholder-icon {
+    width: 20px;
 }
