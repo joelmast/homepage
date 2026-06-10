@@ -2,7 +2,7 @@
     max-width: 100%;
     max-height: 100%;
     width: 20vw;
-
+    padding-top: 20px;
     object-fit: cover;
 }
 
@@ -10,18 +10,22 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: linear-gradient(174deg, #4282a4 50%, #ffffff calc(50% + 1px));
+    background: linear-gradient(174deg, #3e8daf 50%, #ffffff calc(50% + 1px));
 }
 
-.about-section {
-    background-color: grey;
+.about-text {
+    background-color: white;
     max-width: 60ch;
     max-height: 40ch;
+    margin-top: 40px;
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.about-section > h1,
-.about-section > p {
-    padding-left: 10px;
+.about-text > h1,
+.about-text > p {
+    padding-left: 20px;
 }
 
 body {
@@ -54,4 +58,37 @@ body {
 .project-div {
     /* To be removed later, for styling purposes only. */
     border: 5px dashed black;
+}
+
+.contact {
+    display: flex;
+    background-color: #3e8daf;
+    /* max-height: 60vh; */
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-text {
+    color: white;
+}
+
+.contact-list {
+    list-style-type: none;
+}
+
+.contact-list > li {
+    display: flex;
+    padding: 5px;
+}
+
+.contact-list > li > span {
+    padding-right: 10px;
+}
+
+.contact-img {
+    height: 80%;
+    width: auto;
+    object-fit: cover;
+    padding-left: 5vw;
+    max-height: 40vh;
 }
