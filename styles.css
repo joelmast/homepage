@@ -46,9 +46,10 @@ body {
 .project-grid {
     /* padding: 5vw; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
+    max-width: 1050px;
 }
 
 .placeholder-icon {
@@ -57,7 +58,10 @@ body {
 
 .project-div {
     /* To be removed later, for styling purposes only. */
-    border: 5px dashed black;
+    /* border: 5px dashed black; */
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact {
@@ -102,7 +106,16 @@ body {
         order: -1;
         height: 100%;
     }
+}
 
-    .contact {
+@media (max-width: 672px) {
+    .portrait-img {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 446px) {
+    .portrait-img {
+        width: 50vw;
     }
 }
